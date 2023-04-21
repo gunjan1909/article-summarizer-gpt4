@@ -114,3 +114,28 @@
 .summary_box {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
 }
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #e5beec;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7149c6;
+  border-radius: 0.25rem;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2f4f;
+}
+
+/* SCROLLBAR END */
