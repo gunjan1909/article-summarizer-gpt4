@@ -1,5 +1,7 @@
 ## Article Summarizer with OPEN AI GPT-4
 
+This is a tool that extract body of any news article or a website from the url and summarize its contents using OpenAI's GPT-4 model API.
+
 ### Technologies Used
 
 1. React

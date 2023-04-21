@@ -7,9 +7,9 @@ const App = () => {
   return (
     <main>
       <div className="main">
-        {/* for gradient background */}
         <div className="gradient" />
       </div>
+
       <div className="app">
         <Hero />
         <Demo />
