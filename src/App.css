@@ -71,8 +71,50 @@
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
-.black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+/* .black_btn {
+  @apply rounded-full border border-black bg-white;
+} */
+.githubimg:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  /*add box shadow*/
+  box-shadow: 10px 15px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .head_text {
@@ -97,6 +139,13 @@
 
 .submit_btn {
   @apply hover:border-gray-700 hover:text-gray-700 absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border border-gray-200 font-sans text-sm font-medium text-gray-400;
+}
+.submit_btn:hover,
+.url_input:hover,
+.copy_btn:hover,
+.link_card:hover,
+.box_shadow {
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .link_card {

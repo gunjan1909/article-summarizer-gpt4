@@ -1,5 +1,5 @@
 import React from "react";
-import { logo } from "../assets";
+import { logo, github } from "../assets";
 
 const Hero = () => {
   return (
@@ -14,9 +14,9 @@ const Hero = () => {
           onClick={() =>
             window.open("https://github.com/gunjan1909/article-summarier-gpt4")
           }
-          className="black_btn"
+          className="githubimg"
         >
-          Github Repo
+          <img className="h-10" src={github} alt="Github_Logo" />
         </button>
       </nav>
       <h1 className="head_text ">

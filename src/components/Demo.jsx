@@ -72,7 +72,7 @@ const Demo = () => {
           </button>
         </form>
         {/* Search history */}
-        <div className="flex flex-col gap-1 max-h-60 overflow-y-auto">
+        <div className="flex flex-col gap-3 max-h-40 overflow-y-auto box_shadow rounded-lg">
           {allArticles.reverse().map((item, index) => (
             <div
               key={`link-${index}`}
