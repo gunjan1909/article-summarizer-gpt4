@@ -65,3 +65,8 @@ In addition, Vite is highly extensible via its [Plugin API](https://vitejs.dev/g
 ## Contribution
 
 See [Contributing Guide](https://github.com/vitejs/vite/blob/main/CONTRIBUTING.md).
+
+### Docker
+
+- Build the image using `docker build -t image_name .  `
+- Run the container using `docker run -it -p <local_port>:5173 --env-file .env  article_app`
