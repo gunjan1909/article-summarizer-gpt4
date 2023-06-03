@@ -26,6 +26,9 @@ const Demo = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("hello after submit");
+    //scroll to bottom of page
+    window.scrollTo(0, document.body.scrollHeight);
     const { data } = await getSummary({ articleUrl: article.url });
     if (data?.summary) {
       const newArticle = { ...article, summary: data.summary };
